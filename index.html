@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Test</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+      /* NavBar */
+      .p1 {
+        height: 40px;
+        font-size: larger;
+        display: flex;
+        justify-content: space-around;
+      }
+      .logo {
+        padding-top: 10px;
+      }
+      .links {
+        padding-top: 10px;
+        width: 600px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        padding-top: 10px;
+      }
+      button {
+        margin: 10px;
+      }
+      #login {
+        border: 2px solid blue;
+        color: blue;
+        border-radius: 3px;
+        height: 30px;
+        width: 100px;
+      }
+      #register {
+        margin-top: 5px;
+        height: 30px;
+        width: 100px;
+        border-radius: 3px;
+        background-color: blue;
+        color: white;
+      }
+      /* p1 */
+      @media screen and (max-width: 426px) {
+        .p1 {
+          margin: 2px;
+          /* border: 2px solid; */
+          height: 20px;
+          font-size: small;
+          display: flex;
+          justify-content: space-around;
+        }
+        .logo {
+          padding-top: 2px;
+          display: flex;
+        }
+
+        .links {
+          /* border: 2px solid; */
+          padding-top: 2px;
+          width: 600px;
+          display: flex;
+
+          justify-content: space-evenly;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          /* padding-top: 10px; */
+        }
+        .btn {
+          /* border: 2px solid red; */
+          width: 250px;
+          display: flex;
+          justify-content: space-between;
+        }
+        button {
+          margin: 0px;
+        }
+        #login {
+          margin-top: 2px;
+          border: 2px solid blue;
+          color: blue;
+          border-radius: 3px;
+          height: 15px;
+          width: 50px;
+        }
+        #register {
+          margin-top: 2px;
+          height: 15px;
+          width: 50px;
+          border-radius: 3px;
+          background-color: blue;
+          color: white;
+        }
+      }
+
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        .p1 {
+          margin: 2px;
+          height: 50px;
+          font-size: larger;
+          display: flex;
+          justify-content: space-around;
+        }
+        .logo {
+          padding-top: 15px;
+          display: flex;
+        }
+
+        .links {
+          /* border: 2px solid; */
+          padding-top: 15px;
+          width: 600px;
+          display: flex;
+
+          justify-content: space-evenly;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          /* padding-top: 10px; */
+        }
+        .btn {
+          width: 250px;
+          display: flex;
+          justify-content: space-around;
+        }
+        /* button{
+        margin: 0px;
+
+    
+    } */
+        #login {
+          margin-top: 10px;
+          border: 2px solid blue;
+          color: blue;
+          border-radius: 3px;
+          height: 30px;
+          width: 100px;
+        }
+        #register {
+          margin-top: 10px;
+          height: 30px;
+          width: 100px;
+          border-radius: 3px;
+          background-color: blue;
+          color: white;
+        }
+      }
+
+      @media screen and (min-width: 770px) {
+        .p1 {
+          margin: 2px;
+          height: 80px;
+          font-size: xx-large;
+          display: flex;
+          justify-content: space-around;
+        }
+        .logo {
+          padding-top: 25px;
+          display: flex;
+        }
+
+        .links {
+          padding-top: 25px;
+          width: 800px;
+          display: flex;
+
+          justify-content: space-evenly;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+          /* padding-top: 10px; */
+        }
+        .btn {
+          width: 400px;
+          display: flex;
+          justify-content: space-around;
+          margin-top: 10px;
+        }
+        button {
+          margin-top: 0px;
+        }
+        #login {
+          text-size-adjust: 20px;
+          margin-top: 10px;
+          border: 2px solid blue;
+          color: blue;
+          border-radius: 3px;
+          height: 50px;
+          width: 180px;
+        }
+        #register {
+          margin-top: 10px;
+          height: 50px;
+          width: 180px;
+          border-radius: 3px;
+          background-color: blue;
+          color: white;
+        }
+      }
+
+      /* BG image  */
+      .p2 {
+        margin: 2px;
+        border: 2px solid;
+        height: 90vh;
+        width: 98vw;
+        background-image: url("slide_01.jpg");
+      }
+      h1 {
+        color: white;
+        padding-left: 500px;
+        padding-top: 400px;
+      }
+      #imgbtn {
+        padding: 10px;
+        margin-left: 700px;
+        height: 50px;
+        width: 140px;
+        background-color: blue;
+        color: white;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+      button:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px;
+      }
+      /* p2 */
+      @media screen and (max-width: 426px) {
+        .p2 {
+          margin: 2px;
+          /* border: 2px solid red; */
+          height: 40vh;
+          width: 98vw;
+          background-image: url("slide_01.jpg");
+          /* object-fit: cover; */
+          /* object-fit: fill; */
+          object-fit: contain;
+        }
+        h1 {
+          color: white;
+          padding-left: 100px;
+          padding-top: 150px;
+          font-size: small;
+        }
+        #imgbtn {
+          padding-top: 5px;
+          margin-left: 150px;
+          height: 30px;
+          width: 100px;
+          background-color: blue;
+          color: white;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+        }
+        button:hover {
+          cursor: pointer;
+          box-shadow: 2px 2px 2px;
+        }
+      }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        .p2 {
+          margin: 2px;
+          height: 80vh;
+          width: 98vw;
+          background-image: url("slide_01.jpg");
+          /* object-fit: cover; */
+          /* object-fit: fill; */
+          object-fit: contain;
+        }
+        h1 {
+          color: white;
+          padding-left: 250px;
+          padding-top: 300px;
+          font-size: large;
+        }
+        #imgbtn {
+          padding-top: 5px;
+          margin-left: 330px;
+          height: 30px;
+          width: 150px;
+          background-color: blue;
+          color: white;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+        }
+        button:hover {
+          cursor: pointer;
+          box-shadow: 2px 2px 2px;
+        }
+      }
+      @media screen and (min-width: 770px) {
+        .p2 {
+          /* border: 2px solid red; */
+          margin: 2px;
+          height: 80vh;
+          width: 98vw;
+          background-image: url("slide_01.jpg");
+          object-fit: cover;
+          /* object-fit: fill; */
+          /* object-fit: contain; */
+        }
+        h1 {
+          color: white;
+          padding-left: 450px;
+          padding-top: 350px;
+          font-size: xx-large;
+        }
+        #imgbtn {
+          padding-top: 5px;
+          margin-left: 650px;
+          height: 50px;
+          width: 150px;
+          background-color: blue;
+          color: white;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+        }
+        button:hover {
+          cursor: pointer;
+          box-shadow: 2px 2px 2px;
+        }
+      }
+
+      /* Details */
+      #det {
+        padding-left: 100px;
+        padding-top: 30px;
+        height: 2vh;
+        width: 30vw;
+        color: black;
+        margin: 2px;
+      }
+
+      .p3 {
+        /* border: 2px solid; */
+        margin-left: 30px;
+        display: grid;
+        grid-template-areas:
+          "area1 area2"
+          "area3 area4";
+        padding: 30px;
+        gap: 30px;
+      }
+      #ibtn {
+        background-color: skyblue;
+        border-radius: 8px;
+        height: 30px;
+        width: 100px;
+      }
+
+      .item1 {
+        grid-area: area1;
+        /* width: 50vw; */
+      }
+      .item2 {
+        grid-area: area2;
+      }
+      .item3 {
+        grid-area: area3;
+      }
+      .item4 {
+        grid-area: area4;
+      }
+      /* p3 */
+      @media screen and (max-width: 426px) {
+        #det {
+          /* border: 2px solid red; */
+          font-size: large;
+          padding-left: 40px;
+          padding-top: 30px;
+          height: 2vh;
+          width: 50vw;
+          color: black;
+          margin: 2px;
+        }
+        .p3 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 0px;
+          margin: -3px;
+        }
+        #ibtn {
+          background-color: skyblue;
+          border-radius: 8px;
+          margin-left: 40px;
+
+          height: 30px;
+          width: 100px;
+        }
+      }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        #det {
+          padding-left: 70px;
+          padding-top: 30px;
+          height: 2vh;
+          width: 30vw;
+          color: black;
+          margin: 2px;
+        }
+        .p3 {
+          margin-top: -20px;
+          margin-left: 10px;
+          display: grid;
+          grid-template-areas:
+            "area1 area2"
+            "area3 area4";
+          padding: 30px;
+          gap: 30px;
+        }
+        #ibtn {
+          background-color: skyblue;
+          border-radius: 8px;
+          margin-left: 40px;
+
+          height: 30px;
+          width: 100px;
+        }
+        .item1 {
+          grid-area: area1;
+        }
+        .item2 {
+          grid-area: area2;
+        }
+        .item3 {
+          grid-area: area3;
+        }
+        .item4 {
+          grid-area: area4;
+        }
+      }
+      @media screen and (min-width: 770px) {
+        #det {
+          padding-left: 70px;
+          padding-top: 30px;
+          height: 2vh;
+          width: 40vw;
+          color: black;
+          margin: 2px;
+        }
+
+        .p3 {
+          margin-top: 20px;
+          margin-left: 40px;
+          display: grid;
+          grid-template-areas:
+            "area1 area2"
+            "area3 area4";
+          padding: 30px;
+          gap: 30px;
+        }
+        #ibtn {
+          background-color: skyblue;
+          border-radius: 8px;
+          height: 30px;
+          width: 100px;
+        }
+        .item1 {
+          grid-area: area1;
+        }
+        .item2 {
+          grid-area: area2;
+        }
+        .item3 {
+          grid-area: area3;
+        }
+        .item4 {
+          grid-area: area4;
+        }
+      }
+
+      /* P4 */
+      @media screen and (max-width: 426px) {
+        #para {
+          /* border: 2px solid red; */
+          margin: 10px;
+          font-size: small;
+          padding: 0px 20px;
+        }
+        .p4 {
+          font-size: smaller;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        #im {
+          padding: 0px 40px;
+          height: 300px;
+          width: 300px;
+        }
+        .data {
+          /* border: 2px solid; */
+          height: 300px;
+          width: 300px;
+        }
+      }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        #para {
+          margin: 20px;
+          font-size: large;
+          padding-left: 90px;
+        }
+        .p4 {
+          /* border: 2px solid; */
+          font-size: smaller;
+          padding-left: 10px;
+          display: flex;
+          justify-content: space-between;
+        }
+        .data {
+          padding-left: 30px;
+          padding-right: 30px;
+          font-size: small;
+        }
+        #im {
+          height: 300px;
+          width: 250px;
+          padding-right: 60px;
+        }
+      }
+      @media screen and (min-width: 770px) {
+        #paraa {
+          height: 100px;
+          width: 80vw;
+          margin-left: 120px;
+          font-size: large;
+        }
+        #pb {
+          margin-left: 50px;
+          font-size: xx-large;
+        }
+        .p4 {
+          font-size: larger;
+          padding-left: 40px;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        .data {
+          padding: 40px 20px 0px 30px;
+        }
+        #im {
+          height: 300px;
+          width: 350px;
+          padding-right: 80px;
+        }
+      }
+
+      /* p5 */
+      @media screen and (max-width: 426px) {
+        b {
+          padding: 0px 40px;
+        }
+        p {
+          padding: 0px 40px;
+          font-size: smaller;
+        }
+        .side1 {
+          border: 1px solid black;
+          margin-left: 50px;
+          width: 71vw;
+        }
+        #s1 {
+          /* margin: -1px; */
+          height: 150px;
+          width: 300px;
+        }
+      }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        #pare {
+          padding: 0px 40px;
+        }
+        .pp {
+          /* padding: 0px 0px; */
+          font-size: smaller;
+        }
+        .p51 {
+          display: flex;
+        }
+        .side1 {
+          border: 1px solid black;
+          margin-left: 50px;
+          width: 25vw;
+        }
+        #s1 {
+          /* margin: -1px; */
+          height: 150px;
+          width: 25vw;
+        }
+      }
+      @media screen and (min-width: 770px) {
+        #par {
+          /* padding: 0px 250px; */
+          margin-left: 520px;
+          font-size: xx-large;
+        }
+        #pare {
+          padding: 0px 70px;
+          font-size: larger;
+        }
+        .pp {
+          /* padding: 0px 0px; */
+          font-size: smaller;
+        }
+        .p51 {
+          display: flex;
+        }
+        .side1 {
+          border: 1px solid black;
+          margin-left: 60px;
+          width: 25vw;
+        }
+        #s1 {
+          /* margin: -1px; */
+          height: 150px;
+          width: 25vw;
+        }
+      }
+
+      /* p6 */
+
+      @media screen and (max-width: 426px) {
+        #fb {
+          margin-left: 20px;
+        }
+        #forma {
+          margin: 1px 40px;
+          padding-left: 40px;
+          align-content: center;
+          justify-content: center;
+        }
+        #Reg {
+          margin-left: 100px;
+          height: 20px;
+          width: 80px;
+          border-radius: 5px;
+        }
+      }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        #fb {
+          margin-left: 300px;
+          font-size: large;
+        }
+        #fp {
+          margin: 0px 50px;
+        }
+        #forma {
+          height: 40vh;
+          width: 50vw;
+          margin: 1px 150px;
+          padding-left: 40px;
+
+          /* align-content: center;
+        justify-content: center; */
+        }
+        #Reg {
+          /* margin-left:100px ; */
+          height: 20px;
+          width: 80px;
+          border-radius: 5px;
+        }
+      }
+      @media screen and (min-width: 770px) {
+        #fb {
+          margin-left: 300px;
+          font-size: x-large;
+        }
+        #fp {
+          margin: 0px 60px;
+        }
+        #forma {
+          height: 40vh;
+          width: 50vw;
+          margin: 1px 150px;
+          padding-left: 40px;
+        }
+        #Reg {
+          /* margin-left:100px ; */
+          height: 20px;
+          width: 80px;
+          border-radius: 5px;
+        }
+      }
+
+      /* p7 */
+      @media screen and (max-width: 426px) {
+        .p7 {
+          background-color: black;
+        }
+        .p71 {
+          background-color: black;
+          display: flex;
+          justify-content: space-between;
+        }
+        .logoo {
+          /* background-color: black; */
+          display: flex;
+          padding-left: 30px;
+        }
+        .link {
+          display: flex;
+          color: white;
+          font-size: xx-small;
+        }
+        .foot {
+          display: flex;
+          justify-content: space-between;
+        }
+        #ft {
+          font-size: xx-small;
+        }
+      }
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        .p7 {
+          background-color: black;
+        }
+        .p71 {
+          background-color: black;
+          display: flex;
+          justify-content: space-between;
+        }
+        .logoo {
+          /* background-color: black; */
+          display: flex;
+          padding-left: 50px;
+        }
+        .link {
+          display: flex;
+          justify-content: space-between;
+          color: white;
+          font-size: small;
+        }
+        .foot {
+          display: flex;
+          justify-content: space-between;
+        }
+        #ft {
+          font-size: small;
+        }
+      }
+      @media screen and (min-width: 770px) {
+        .p7 {
+          background-color: black;
+        }
+        .p71 {
+          background-color: black;
+          display: flex;
+          justify-content: space-between;
+        }
+        .logoo {
+          /* background-color: black; */
+          display: flex;
+          padding-left: 50px;
+        }
+        .link {
+          display: flex;
+          justify-content: space-between;
+          color: white;
+          font-size: large;
+        }
+        .foot {
+          display: flex;
+          justify-content: space-between;
+        }
+        #ft {
+          font-size: large;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p1">
+      <div class="logo">
+        <ion-icon name="copy"></ion-icon>
+        <div>Logo</div>
+      </div>
+      <div class="links">
+        <div><a href="#">Features</a></div>
+        <div><a href="#">Pricing</a></div>
+        <div><a href="#">Community</a></div>
+        <div><a href="#">Support</a></div>
+      </div>
+      <div class="btn">
+        <div><button id="login">Login</button></div>
+        <div><button id="register">Register</button></div>
+      </div>
+    </div>
+
+    <div class="p2">
+      <h1>The Largest community of photo enthusiasts</h1>
+      <button id="imgbtn">Join Today</button>
+    </div>
+
+    <h1 id="det">Snap photos and share like never before</h1>
+    <h1 id="det"></h1>
+    <div class="p3">
+      <div class="item1">
+        <b>Sed ut perspiciatis</b>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+          eaque. Error delectus rem dignissimos nisi corporis necessitatibus
+          dolor ratione dolorum illo nostrum, similique voluptates fugit odio
+          sequi fuga repellat tempora.
+        </p>
+        <br />
+        <button id="ibtn">Learn more...</button>
+      </div>
+      <div class="item2">
+        <b>Sed ut perspiciatis</b>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+          eaque. Error delectus rem dignissimos nisi corporis necessitatibus
+          dolor ratione dolorum illo nostrum, similique voluptates fugit odio
+          sequi fuga repellat tempora.
+        </p>
+        <br />
+        <button id="ibtn">Learn more...</button>
+      </div>
+      <div class="item3">
+        <b>Sed ut perspiciatis</b>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+          eaque. Error delectus rem dignissimos nisi corporis necessitatibus
+          dolor ratione dolorum illo nostrum, similique voluptates fugit odio
+          sequi fuga repellat tempora.
+        </p>
+        <br />
+        <button id="ibtn">Learn more...</button>
+      </div>
+      <div class="item4">
+        <b>Sed ut perspiciatis</b>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat,
+          eaque. Error delectus rem dignissimos nisi corporis necessitatibus
+          dolor ratione dolorum illo nostrum, similique voluptates fugit odio
+          sequi fuga repellat tempora.
+        </p>
+        <br />
+        <button id="ibtn">Learn more...</button>
+      </div>
+    </div>
+
+    <p id="paraa">
+      <b id="pb">Have you ever posted any photo on social media?</b><br />
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, iure
+      excepturi reprehenderit a neque itaque odit praesentium dicta ut rem esse
+      fugiat eos. Ullam aspernatur unde tempora eveniet laudantium! Repellendus!
+    </p>
+
+    <div class="p4">
+      <div class="data">
+        <p>
+          <b>Sed ut perspiciatis</b><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          neque nihil libero atque, sed eos voluptatem odit, reprehenderit
+          excepturi animi facere aliquam saepe adipisci sequi temporibus! Ipsum
+          ea neque pariatur!
+        </p>
+        <br />
+        <p>
+          <b>Sed ut perspiciatis</b><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          neque nihil libero atque, sed eos voluptatem odit, reprehenderit
+          excepturi animi facere aliquam saepe adipisci sequi temporibus! Ipsum
+          ea neque pariatur!
+        </p>
+        <br />
+        <p>
+          <b>Sed ut perspiciatis</b><br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          neque nihil libero atque, sed eos voluptatem odit, reprehenderit
+          excepturi animi facere aliquam saepe adipisci sequi temporibus! Ipsum
+          ea neque pariatur!
+        </p>
+        <br />
+      </div>
+      <div class="image">
+        <img src="Side.jpg" alt="" id="im" />
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="p5">
+      <b id="pare">Make your photos more stylish </b><br />
+      <p id="pare">
+        AAALorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+        a velit aliquam quod illo aliquid repudiandae rerum blanditiis officia
+        earum tempora omnis? Aliquid architecto iusto, quisquam ratione totam
+        facere ducimus.
+      </p>
+      <br /><br />
+      <div class="p51">
+        <div class="side1">
+          <img src="Img 01.jpg" alt="" id="s1" /><br /><br />
+          <b>Sed ut perspiciatis</b><br /><br />
+          <p id="pp">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia.
+          </p>
+        </div>
+        <br /><br />
+        <div class="side1">
+          <img src="Img 02.jpg" alt="" id="s1" /><br /><br />
+          <b>Sed ut perspiciatis</b><br /><br />
+          <p>
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia.
+          </p>
+        </div>
+        <br /><br />
+        <div class="side1">
+          <img src="Img 03.jpg" alt="" id="s1" /><br /><br />
+          <b>Sed ut perspiciatis</b><br /><br />
+          <p>
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="p6">
+      <b id="fb">Ready to take a free trail?</b>
+      <p id="fp">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+        nisi reiciendis nemo odit placeat iusto, fuga dolorem quod vero. Rem,
+        qui. Minus esse amet possimus tempore vitae necessitatibus distinctio
+        nisi.
+      </p>
+      <br />
+      <div class="form">
+        <fieldset id="forma">
+          <legend>Form</legend>
+          <form action="">
+            <br />
+            <b>Sign up for a free account</b><br /><br />
+            <input type="text" placeholder="First name" /> &emsp;
+            <input type="text" placeholder="Last name" /><br /><br />
+            <input type="email" placeholder="Email address" /> &emsp;
+            <input type="tel" placeholder="Phone Number" /><br /><br />
+            <input type="password" name="" id="" /><br /><br />
+            <button id="Reg">Register</button>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+    <br />
+
+    <div class="p7">
+      <div class="p71">
+        <div class="logoo">
+          <ion-icon name="copy" style="color: white"></ion-icon>
+          <div style="color: white">Logo</div>
+        </div>
+
+        <div class="link">
+          <div class="mb">
+            <div>Mobile app</div>
+            <br />
+            <div>Festures</div>
+            <div>Live Share</div>
+            <div>Video record</div>
+          </div>
+          <div class="com">
+            <div>Community</div>
+            <br />
+
+            <div>Festured artists</div>
+            <div>The Portal</div>
+            <div>Live events</div>
+          </div>
+          <div>
+            <div>Company</div>
+            <br />
+            <div>About us</div>
+            <div>Contact us</div>
+            <div>History</div>
+          </div>
+          <div>
+            <button>Register</button><br />
+            <button>Login</button>
+          </div>
+        </div>
+      </div>
+      <hr style="opacity: 0.5" />
+      <div class="foot">
+        <div>
+          <p style="color: white" id="ft">
+            &copy; Photo, Inc. 2019. We love our users!
+          </p>
+        </div>
+        <div>
+          <p style="color: white" id="ft">
+            Follow us:
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
